@@ -54,7 +54,6 @@ services:
       - "8086:8080"
     depends_on:
       - broker
-      - schema-registry
     environment:
       KAFKA_CLUSTERS_NAME: local
       KAFKA_CLUSTERS_BOOTSTRAPSERVERS: broker:29092
